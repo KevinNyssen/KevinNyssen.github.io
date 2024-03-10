@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    padding: 20px;
+}
+.menu-bar {
+    background-color: #333;
+    padding: 15px;
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    color: white;
+}
+.menu-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-bar li {
+    margin-bottom: 10px;
+}
+
+.menu-bar a {
+    text-decoration: none;
+    color: white;
+}
+header {
+    background: url('https://cdn.sanity.io/images/f23a1pgq/pma_production/28859d5709c77d75726730a4a2a80ee8028ece3c-5760x3840.jpg?rect=0,1308,5760,2160&bg=f2f2f2&w=1920&h=720&q=80&fit=clip') center/cover no-repeat;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    z-index: -1;
+}
+mark {
+    background-color: #3067bacc; /* Set the background color */
+    color: #fff
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 230px;
+    width: 84.85%;
+    height: 30px;
+    background-color: #3498db;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+#principal {
+    background: url('https://cybersecurityventures.com/wp-content/uploads/2018/04/events-1.jpg') center/cover no-repeat;
+    background-color: #3498db; /* Set your desired background color */
+    color: #fff; /* Set text color to white for better visibility */
+    padding: 110px;
+    text-align: right;
+    position: relative;
+    z-index: -1;
+    height: 30vh;
+}
+
+.social-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.social-button {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}

@@ -1,25 +1,131 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fase 1 - Mi Página Web</title>
+    <title>Event Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="menu-bar">
+        <ul>
+            <li><a href="#principal">Principal</a></li>
+            <li><a href="#acerca">Acerca</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </div>
 
     <header>
-        <h1>Mi Página Web</h1>
+        <h1><mark>La Casa Viel de la Bien</mark></h1>
+        <p><mark>Eventos, pasteleria y decoracion!</mark></p>
     </header>
 
-    <section>
-        <h2>Fase 1</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-    </section>
+    <main>
+        <section id="principal">
+            <h2>Los mejores eventos</h2>
+            <p>Para cada <span id="eventType">evento</span>, que puedas necesitar...</p>
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <section id="acerca">
+            <h2>Acerca de Nosotros</h2>
+            <p>Bienvenidos a La Casa Viel de la Bien, tu socio creativo para eventos inolvidables, decoración cautivadora y pasteles exquisitos. En La Casa Viel de la Bien, nos dedicamos a transformar tus momentos especiales en experiencias extraordinarias.</p>
 
+            <h3>Nuestra Misión</h3>
+            <p>En La Casa Viel de la Bien, nuestra misión es hacer realidad tus sueños y superar tus expectativas en cada detalle. Nos esforzamos por ofrecer servicios de alta calidad que reflejen la personalidad única de cada cliente, creando recuerdos que perduran toda la vida.</p>
+            <h3>¿Por Qué Elegirnos?</h3>
+            <ul>
+                <li><strong>Experiencia Comprobada:</strong> Con años de experiencia en la industria, hemos acumulado un historial de eventos exitosos y clientes satisfechos.</li>
+                <li><strong>Enfoque Personalizado:</strong> Cada cliente es único, y tratamos cada proyecto con un enfoque personalizado para garantizar resultados excepcionales.</li>
+                <li><strong>Pasión por los Detalles:</strong> Nos apasiona la atención a los detalles. Cada elemento, desde la selección de colores hasta la disposición de la mesa, se maneja con cuidado y precisión.</li>
+            </ul>
+
+            <p>En La Casa Viel de la Bien, no solo organizamos eventos; creamos experiencias inolvidables que celebran la alegría, el amor y la belleza en cada ocasión. Únete a nosotros para convertir tus sueños en realidad.</p>
+
+            <p>¡Gracias por confiar en nosotros para tus momentos más especiales!</p>
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <div class="grid-container">
+                <div class="service-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqYgy7mn98AUhGsTFHoBn7CnT5ndLqxaQzg&usqp=CAU" alt="Fotografía">
+                    <p>Fotografía</p>
+                </div>
+        
+                <div class="service-card">
+                    <img src="https://cdn0.bodas.com.mx/article-real-wedding/581/original/1280/jpg/542229.jpeg" alt="Música en Vivo">
+                    <p>Música en Vivo</p>
+                </div>
+        
+                <div class="service-card">
+                    <img src="https://productoschata.com/wp-content/uploads/2023/07/2-6.jpg" alt="Menú">
+                    <p>Menú</p>
+                </div>
+        
+                <div class="service-card">
+                    <img src="https://cdn2.cocinadelirante.com/sites/default/files/images/2023/08/receta-de-pastel-de-chocolate-facil.jpg" alt="Pasteles Personalizados">
+                    <p>Pasteles Personalizados</p>
+                </div>
+        
+                <div class="service-card">
+                    <img src="https://i0.wp.com/presidenteicguadalajara.com/wp-content/uploads/2022/12/salon-eventos-guadalajara-agave-1.jpg?fit=700%2C433&ssl=1" alt="Salones">
+                    <p>Salones</p>
+                </div>
+        
+                <div class="service-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFShauJgPrabZ8tXrTj4XmJ8my0doWvU8Kf4jP3pZdOUbaKLhfdySQdL05cDCv8z-R_tk&usqp=CAU" alt="Promoción">
+                    <p>Promoción</p>
+                </div>
+        
+                <div class="service-card">
+                    <img src="https://www.controlcombustible.pe/wp-content/uploads/2022/04/KENWORTH_-Una-de-las-marcas-favoritas-de-trailers-1024x594.png" alt="Logística">
+                    <p>Logística</p>
+                </div>
+        
+                <div class="service-card">
+                    <img src="https://www.leonardoartigas.com/wp-content/uploads/2021/04/decoracion-de-eventos-leonardo-artigas-2.jpg" alt="Decoraciones">
+                    <p>Decoraciones</p>
+                </div>
+        
+                <div class="service-card">
+                    <img src="https://cdn.shopify.com/s/files/1/0750/2513/files/salas-elite_logo.png?v=1518042120" alt="Renta de Muebles">
+                    <p>Renta de Muebles</p>
+                </div>
+        
+                <div class="service-card">
+                    <img src="https://weezevent.com/wp-content/uploads/2020/08/24170106/5-bonnes-pratiques-gerer-staff-evenement.jpg" alt="Personal de Eventos">
+                    <p>Personal de Eventos</p>
+                </div>
+        
+                <div class="service-card">
+                    <img src="https://www.eventoslaroca.com/wp-content/uploads/2018/01/sonido-y-luces-aj-eventos-la-roca-recreacion.jpeg" alt="Renta de Equipo">
+                    <p>Renta de Equipo</p>
+                </div>
+            </div>
+            </ul>
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <section id="ontacto">
+            <h2>Contacto</h2>
+            <p>Registra tu evento con nosotros!</p>
+            <button id="registerButton">Contacto</button>
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </main>
+    <div class="social-buttons">
+        <a href="#" class="social-button">
+            <img src="https://cdn-icons-png.flaticon.com/256/20/20673.png" alt="Facebook" width="50" height="50">
+        </a>
+        <a href="#" class="social-button">
+            <img src="https://www.svgrepo.com/show/332182/twitter-circle.svg" alt="Twitter/x" width="57" height="57">
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Event Page</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
