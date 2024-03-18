@@ -8,6 +8,7 @@ body {
 header, main, footer {
     padding: 20px;
 }
+
 .menu-bar {
     background-color: #333;
     padding: 15px;
@@ -18,6 +19,7 @@ header, main, footer {
     top: 0;
     color: white;
 }
+
 .menu-bar ul {
     list-style: none;
     padding: 0;
@@ -32,24 +34,28 @@ header, main, footer {
     text-decoration: none;
     color: white;
 }
+
 header {
     background: url('https://cdn.sanity.io/images/f23a1pgq/pma_production/28859d5709c77d75726730a4a2a80ee8028ece3c-5760x3840.jpg?rect=0,1308,5760,2160&bg=f2f2f2&w=1920&h=720&q=80&fit=clip') center/cover no-repeat;
     text-align: center;
     padding: 50px;
     position: relative;
     z-index: -1;
+    margin-bottom: 20px;
 }
+
 mark {
-    background-color: #3067bacc; /* Set the background color */
-    color: #fff
+    background-color: #3067bacc;
+    color: #fff;
+    padding: 5px;
 }
 
 header::before {
     content: "";
     position: absolute;
     top: -30px;
-    left: 230px;
-    width: 84.85%;
+    left: 0;
+    width: 100%;
     height: 30px;
     background-color: #3498db;
 }
@@ -62,10 +68,11 @@ main {
 section {
     margin-bottom: 30px;
 }
+
 #principal {
     background: url('https://cybersecurityventures.com/wp-content/uploads/2018/04/events-1.jpg') center/cover no-repeat;
-    background-color: #3498db; /* Set your desired background color */
-    color: #fff; /* Set text color to white for better visibility */
+    background-color: #3498db;
+    color: #fff;
     padding: 110px;
     text-align: right;
     position: relative;
@@ -77,9 +84,6 @@ section {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
 }
 
 .social-button {
@@ -92,6 +96,7 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    border: none;
 }
 
 button:hover {
@@ -100,15 +105,50 @@ button:hover {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 20px;
     padding: 20px;
 }
 
+.service-card {
+    text-align: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 
-img {
+.service-card img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
+}
+
+.service-card p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .menu-bar {
+        width: 100%;
+        position: relative;
+        height: auto;
+        padding: 10px;
+    }
+
+    .menu-bar ul {
+        text-align: center;
+    }
+
+    .menu-bar li {
+        display: inline-block;
+        margin-right: 20px;
+    }
 }
