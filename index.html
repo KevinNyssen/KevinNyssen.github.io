@@ -1,127 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Casa Viel de la Bien</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="menu-bar">
-        <ul>
-            <li><a href="#principal">Principal</a></li>
-            <li><a href="#acerca">Acerca</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="styles.css">
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+        <script src="/js/main.js" type="module" defer></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+        <title>la bien de la vien</title>
+    </head>
+<body>
     <header>
-        <h1><mark>La Casa Viel de la Bien</mark></h1>
+        <h1><mark><img src="img/ads.png" alt="Icon" class ="logo">La Casa Viel de la Bien</mark></h1>
         <p><mark>Eventos, pasteleria y decoracion!</mark></p>
     </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- svg vacio para el navbar, no me responde al margen -->
+        <svg width="24" height="24" viewBox="0 0 24 24">
+            <rect width="100%" height="100%" fill="none" stroke="none" />
+        </svg>
+        <img src="img/ads.png" alt="Icon" width="40" height="40">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-page="home">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-page="about">Acerca</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" data-page="foto">Fotografía</a></li>
+                  <li><a class="dropdown-item" href="#" data-page="musica">Musica en vivo</a></li>
+                  <li><a class="dropdown-item" href="#" data-page="menu">Menu</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#" data-page="pastel">Pasteleria</a></li>
+                </ul>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-page="form">Form</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
     <main>
-        <section id="principal">
-            <h2>Los mejores eventos</h2>
-            <p>Para cada <span id="eventType">evento</span>, que puedas necesitar...</p>
-        </section>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-        <section id="acerca">
-            <h2>Acerca de Nosotros</h2>
-            <p>Bienvenidos a La Casa Viel de la Bien, tu socio creativo para eventos inolvidables, decoración cautivadora y pasteles exquisitos. En La Casa Viel de la Bien, nos dedicamos a transformar tus momentos especiales en experiencias extraordinarias.</p>
-
-            <h3>Nuestra Misión</h3>
-            <p>En La Casa Viel de la Bien, nuestra misión es hacer realidad tus sueños y superar tus expectativas en cada detalle. Nos esforzamos por ofrecer servicios de alta calidad que reflejen la personalidad única de cada cliente, creando recuerdos que perduran toda la vida.</p>
-            <h3>¿Por Qué Elegirnos?</h3>
-            <ul>
-                <li><strong>Experiencia Comprobada:</strong> Con años de experiencia en la industria, hemos acumulado un historial de eventos exitosos y clientes satisfechos.</li>
-                <li><strong>Enfoque Personalizado:</strong> Cada cliente es único, y tratamos cada proyecto con un enfoque personalizado para garantizar resultados excepcionales.</li>
-                <li><strong>Pasión por los Detalles:</strong> Nos apasiona la atención a los detalles. Cada elemento, desde la selección de colores hasta la disposición de la mesa, se maneja con cuidado y precisión.</li>
-            </ul>
-
-            <p>En La Casa Viel de la Bien, no solo organizamos eventos; creamos experiencias inolvidables que celebran la alegría, el amor y la belleza en cada ocasión. Únete a nosotros para convertir tus sueños en realidad.</p>
-
-            <p>¡Gracias por confiar en nosotros para tus momentos más especiales!</p>
-        </section>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-        <section id="servicios">
-            <h2>Servicios</h2>
-            <div class="grid-container">
-                <div class="service-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqYgy7mn98AUhGsTFHoBn7CnT5ndLqxaQzg&usqp=CAU" alt="Fotografía">
-                    <p>Fotografía</p>
+        <div id="content">
+            <!-- Content will be dynamically replaced here -->
                 </div>
+                
         
-                <div class="service-card">
-                    <img src="https://cdn0.bodas.com.mx/article-real-wedding/581/original/1280/jpg/542229.jpeg" alt="Música en Vivo">
-                    <p>Música en Vivo</p>
-                </div>
-        
-                <div class="service-card">
-                    <img src="https://productoschata.com/wp-content/uploads/2023/07/2-6.jpg" alt="Menú">
-                    <p>Menú</p>
-                </div>
-        
-                <div class="service-card">
-                    <img src="https://cdn2.cocinadelirante.com/sites/default/files/images/2023/08/receta-de-pastel-de-chocolate-facil.jpg" alt="Pasteles Personalizados">
-                    <p>Pasteles Personalizados</p>
-                </div>
-        
-                <div class="service-card">
-                    <img src="https://i0.wp.com/presidenteicguadalajara.com/wp-content/uploads/2022/12/salon-eventos-guadalajara-agave-1.jpg?fit=700%2C433&ssl=1" alt="Salones">
-                    <p>Salones</p>
-                </div>
-        
-                <div class="service-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFShauJgPrabZ8tXrTj4XmJ8my0doWvU8Kf4jP3pZdOUbaKLhfdySQdL05cDCv8z-R_tk&usqp=CAU" alt="Promoción">
-                    <p>Promoción</p>
-                </div>
-        
-                <div class="service-card">
-                    <img src="https://www.controlcombustible.pe/wp-content/uploads/2022/04/KENWORTH_-Una-de-las-marcas-favoritas-de-trailers-1024x594.png" alt="Logística">
-                    <p>Logística</p>
-                </div>
-        
-                <div class="service-card">
-                    <img src="https://www.leonardoartigas.com/wp-content/uploads/2021/04/decoracion-de-eventos-leonardo-artigas-2.jpg" alt="Decoraciones">
-                    <p>Decoraciones</p>
-                </div>
-        
-                <div class="service-card">
-                    <img src="https://cdn.shopify.com/s/files/1/0750/2513/files/salas-elite_logo.png?v=1518042120" alt="Renta de Muebles">
-                    <p>Renta de Muebles</p>
-                </div>
-        
-                <div class="service-card">
-                    <img src="https://weezevent.com/wp-content/uploads/2020/08/24170106/5-bonnes-pratiques-gerer-staff-evenement.jpg" alt="Personal de Eventos">
-                    <p>Personal de Eventos</p>
-                </div>
-        
-                <div class="service-card">
-                    <img src="https://www.eventoslaroca.com/wp-content/uploads/2018/01/sonido-y-luces-aj-eventos-la-roca-recreacion.jpeg" alt="Renta de Equipo">
-                    <p>Renta de Equipo</p>
+        <br><br><br><br><br>
+        <section id="contact">
+            <div class="containment">
+                <div class="content">
+                    <h2>Contacto</h2>
+                    <p>Registra tu evento con nosotros!</p>
+                    <button id="registerButton">Contacto</button>
                 </div>
             </div>
-            </ul>
-        </section>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Registra tu evento con nosotros!</p>
-            <button id="registerButton">Contacto</button>
         </section>
         <br><br><br><br><br><br><br><br><br><br><br><br>
     </main>
     <div class="social-buttons">
         <a href="#" class="social-button">
-            <img src="https://cdn-icons-png.flaticon.com/256/20/20673.png" alt="Facebook" width="50" height="50">
+            <img src="./img/facebook.svg" alt="Facebook" width="50" height="50">
         </a>
         <a href="#" class="social-button">
-            <img src="https://www.svgrepo.com/show/332182/twitter-circle.svg" alt="Twitter/x" width="57" height="57">
+            <img src="./img/twitter.png" alt="Twitter/x" width="50" height="50">
+        </a>
+        <a href="#" class="social-button">
+            <img src="./img/whatsapp.png" alt="Whatsapp" width="50" height="50">
         </a>
     </div>
-
     <footer>
         <p>&copy; 2024 Event Page</p>
     </footer>

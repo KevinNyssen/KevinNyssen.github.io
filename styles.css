@@ -1,47 +1,9 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header, main, footer {
-    padding: 20px;
-}
-
-.menu-bar {
-    background-color: #333;
-    padding: 15px;
-    height: 100vh;
-    width: 200px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    color: white;
-}
-
-.menu-bar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu-bar li {
-    margin-bottom: 10px;
-}
-
-.menu-bar a {
-    text-decoration: none;
-    color: white;
-}
-
 header {
     background: url('https://cdn.sanity.io/images/f23a1pgq/pma_production/28859d5709c77d75726730a4a2a80ee8028ece3c-5760x3840.jpg?rect=0,1308,5760,2160&bg=f2f2f2&w=1920&h=720&q=80&fit=clip') center/cover no-repeat;
     text-align: center;
-    padding: 50px;
+    padding: 10px;
     position: relative;
     z-index: -1;
-    margin-bottom: 20px;
 }
 
 mark {
@@ -50,35 +12,112 @@ mark {
     padding: 5px;
 }
 
-header::before {
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 0;
-    width: 100%;
-    height: 30px;
-    background-color: #3498db;
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+}
+.container {
+    display: flex;
+    justify-content: center; /* Horizontally centers content */
+    align-items: center; /* Vertically centers content */
+    height: 80vh; /* Makes the container full height of the viewport */
+    background-color: white; /* Set the background color to white */
+    padding: 20px; /* Add some padding to create space around the content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}
+.containment {
+    display: flex;
+    justify-content: center; /* Horizontally centers content */
+    align-items: center; /* Vertically centers content */
+    height: 30vh; /* Makes the container full height of the viewport */
+    background-color: rgba(217, 235, 233, 0.77); /* Set the background color to white */
+    padding: 20px; /* Add some padding to create space around the content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
 }
 
-main {
-    max-width: 800px;
-    margin: 20px auto;
+div:where(.swal2-container) .swal2-select {
+    width: 80% !important;
+    margin-bottom: 10px;
 }
 
-section {
-    margin-bottom: 30px;
+.content {
+    text-align: center; /* Centers text horizontally within the container */
 }
 
-#principal {
-    background: url('https://cybersecurityventures.com/wp-content/uploads/2018/04/events-1.jpg') center/cover no-repeat;
-    background-color: #3498db;
-    color: #fff;
-    padding: 110px;
-    text-align: right;
-    position: relative;
-    z-index: -1;
-    height: 30vh;
+.height-correction {
+    height: 100%;
 }
+
+.logo {
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: 40px;
+    height: 40px;
+}
+#carouselExampleAutoplaying {
+    max-height: 500px; /* Adjust the value as needed */
+    overflow: hidden; /* Hide any overflow content */
+    max-width: 800px; /* Adjust the value as needed */
+    margin: 0 auto; /* Center the carousel horizontally */
+}
+
+#carouselExampleAutoplaying .carousel-inner {
+    max-height: 100%; /* Ensure the carousel items fit within the container */
+}
+
+#carouselExampleAutoplaying .carousel-item img {
+    height: auto; /* Allow the images to resize proportionally */
+    max-height: 100%; /* Ensure the images fit within the carousel container */
+}
+p {
+    font-size: larger;
+    margin-bottom: 5px;
+}
+#carouselCourse0 {
+    max-height: 500px; /* Adjust the value as needed */
+    overflow: hidden; /* Hide any overflow content */
+    max-width: 800px; /* Adjust the value as needed */
+    margin: 0 auto; /* Center the carousel horizontally */
+}
+#carouselCourse1 {
+    max-height: 500px; /* Adjust the value as needed */
+    overflow: hidden; /* Hide any overflow content */
+    max-width: 800px; /* Adjust the value as needed */
+    margin: 0 auto; /* Center the carousel horizontally */
+}
+
+#carouselCourse2 {
+    max-height: 500px; /* Adjust the value as needed */
+    overflow: hidden; /* Hide any overflow content */
+    max-width: 800px; /* Adjust the value as needed */
+    margin: 0 auto; /* Center the carousel horizontally */
+}
+
+#carouselCourse3 {
+    max-height: 500px; /* Adjust the value as needed */
+    overflow: hidden; /* Hide any overflow content */
+    max-width: 800px; /* Adjust the value as needed */
+    margin: 0 auto; /* Center the carousel horizontally */
+}
+h2 {
+    text-align: center;
+}
+
+.carousel-caption {
+    /* Your styles for the carousel caption */
+    width: 100%; /* Set the width to 100% to occupy the entire width of the carousel item */
+    background-color: rgba(0, 0, 0, 0.5); /* Example background color with transparency */
+    color: rgb(255, 255, 255); /* Example text color */
+    position: absolute; /* Position the caption relative to its parent carousel item */
+    bottom: -14; /* Position the caption at the bottom of the carousel item */
+    left: 0; /* Align the caption to the left of the carousel item */
+}
+
+
 
 .social-buttons {
     position: fixed;
@@ -100,7 +139,7 @@ button {
 }
 
 button:hover {
-    background-color: #27ae60;
+    background-color: #35a3d2;
 }
 
 .grid-container {
@@ -152,3 +191,45 @@ footer {
         margin-right: 20px;
     }
 }
+    /* Estilos CSS para personalizar la apariencia */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .contain {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .image-container {
+        position: relative;
+        width: 80%; /* Ancho de la imagen */
+        margin: auto;
+    }
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+    .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.264); /* Color de fondo semi-transparente */
+        color: #fff; /* Color del texto */
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .quote-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #007bff; /* Color de fondo del botón */
+        color: #fff; /* Color del texto del botón */
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    .quote-button:hover {
+        background-color: #0056b3; /* Color de fondo del botón al pasar el mouse */
+    }
